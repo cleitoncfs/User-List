@@ -1,5 +1,5 @@
 import React from 'react'
-import users from './assets/users.json'
+import users from './../assets/users.json'
 import User from './components/User/User'
 
 function UserList() {
