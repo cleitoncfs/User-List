@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Anita",
+        "age": 30,
+        "position": "Front-End Developer",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Diogo",
+        "age": 21,
+        "position": "Front-End Developer",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Amélia",
+        "age": 31,
+        "position": "Front-End Developer",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Emanuel",
+        "age": 51,
+        "position": "Front-End Developer",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    }
+]

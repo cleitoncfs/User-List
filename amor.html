@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="lista">
+
+        <div class="produto">maçã</div>
+        <div class="produto">banana</div>
+        <div class="produto">melancia</div>
+
+    </div>
+
+    <script>
+        const preencherLista = (produtos) => {
+
+            const listaHTML = document.querySelector(".lista")
+            listaHTML.innerHTML = "" // limpar a lista
+            const produtos = ["maçã", "banana", "melancia"]
+
+            produtos.forEach(produto => {
+                listaHTML.innerHTML += `<div class="produto">${produto}</div>`
+            })
+
+
+            // código real da função
+        }
+    </script>
+    
+</body>
+</html>

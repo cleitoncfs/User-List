@@ -1,0 +1,11 @@
+/* add */
+.App .info {
+    background-color: #444;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+.user {
+    margin: 20px;
+}
