@@ -1,5 +1,6 @@
 import React from 'react'
 import User from './../../components/User/User'
+import { Link } from 'react-router-dom'
 
 function UsersPage(props) {
 
@@ -20,7 +21,7 @@ function UsersPage(props) {
                 user={user} />
             )}
 
-            <button> Adicionar User </button>
+            <Link to={`/new`}><button> Adicionar User </button></Link>
         </div>
     )
 }
