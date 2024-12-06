@@ -1,8 +1,13 @@
 import React from 'react'
+import "./User.css"
 
 function User(props) {
+
+    const { user, eliminarUser } = props
     
-    const { user } = props
+    const handleClick = () => {
+        eliminarUser(user.id)
+    }
 
     return (
         <div className='user'>
@@ -16,6 +21,11 @@ function User(props) {
                 {user.position}
             </div>
             <img src={user.image} />
+
+
+            <button onClick={handleClick}>
+                Eliminar
+            </button>
         </div>
     )
 }

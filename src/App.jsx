@@ -1,16 +1,23 @@
 import './App.css'
-import UserList from './components/UserList/UserList'
+import UsersPage from './pages/UsersPage/UsersPage'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
-  return (
-    <div className='App'>
+  return (<>
 
-      <UserList />
+    <Routes>
+      <Route path='/' element={<UsersPage />} />
+      <Route path='/new' element={<div>New User Page!</div>} />
+      <Route path='/:userId' element={<div>Single User Page!</div>} />
+      <Route path='/edit/:userId' element={<div>Edit User Page!</div>} />
+      <Route path='*' element={<div>404 Page!</div>} />
+    </Routes>
 
-    </div>
+    {/* <UsersPage /> */}
 
-  )
+  </>)
+
 }
 
 export default App
