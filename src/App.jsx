@@ -17,7 +17,7 @@ function App() {
       <Route path='/' element={<UsersPage users={users} setUsers={setUsers} />} />
       <Route path='/new' element={<NewUserPage users={users} setUsers={setUsers} />} />
       <Route path='/:userId' element={<UserPage users={users} />} />
-      <Route path='/edit/:userId' element={<EditUserPage users={users} setUsers={setUsers} />} />
+      {/* <Route path='/edit/:userId' element={<EditUserPage users={users} setUsers={setUsers} />} /> */}
       <Route path='*' element={<div>404 Page!</div>} />
     </Routes>
 
