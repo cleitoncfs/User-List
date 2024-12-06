@@ -1,6 +1,9 @@
 import './App.css'
-import UsersPage from './pages/UsersPage/UsersPage'
 import { Routes, Route } from 'react-router-dom'
+import UsersPage from './pages/UsersPage/UsersPage'
+import NewUserPage from './pages/NewUserPage/NewUserPage'
+import UserPage from './pages/UserPage/UserPage'
+import EditUserPage from './pages/EditUserPage/EditUserPage'
 
 function App() {
 
@@ -8,9 +11,9 @@ function App() {
 
     <Routes>
       <Route path='/' element={<UsersPage />} />
-      <Route path='/new' element={<div>New User Page!</div>} />
-      <Route path='/:userId' element={<div>Single User Page!</div>} />
-      <Route path='/edit/:userId' element={<div>Edit User Page!</div>} />
+      <Route path='/new' element={<NewUserPage />} />
+      <Route path='/:userId' element={<UserPage />} />
+      <Route path='/edit/:userId' element={<EditUserPage />} />
       <Route path='*' element={<div>404 Page!</div>} />
     </Routes>
 
