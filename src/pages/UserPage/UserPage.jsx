@@ -22,7 +22,9 @@ function UserPage(props) {
                     </div>
 
                     <Link to={`/`}> <button>Voltar</button> </Link>
-                    <Link to={`/`}> <button>Editar</button> </Link>
+                    <Link to={`/edit/${user.id}`}> <button>Editar</button> </Link>
+
+                    {/* localhost:8080/edit/:userId */}
 
                 </>}
         </div>

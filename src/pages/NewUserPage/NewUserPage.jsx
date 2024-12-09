@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 function NewUserPage(props) {
 
@@ -49,6 +49,8 @@ function NewUserPage(props) {
   return (
     <div>
 
+      <h1>Create New User</h1>
+
       <form onSubmit={handleSubmit}>
 
         <div>
@@ -71,6 +73,8 @@ function NewUserPage(props) {
         </div>
 
       </form>
+
+      <Link to={`/`}> <button>Voltar</button> </Link>
 
     </div>
   )
