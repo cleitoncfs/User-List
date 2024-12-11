@@ -1,37 +1,45 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./User.css"
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom"; // Importa o Link para navegação
+import "./User.css";
 
-function User(props) {
-
-    const { user, eliminarUser } = props
-
-    const handleClick = () => {
-        eliminarUser(user.id)
-    }
-
+const User = ({ user, eliminarUser }) => {
     return (
-        <div className='user'>
-            <Link to={`/${user.id}`}>
-                <div className='info'>
-                    {user.name}
+        <article className="user-card">
+            <img
+                className="user-avatar"
+                src={user.image}
+                alt={`${user.name}'s avatar`}
+            />
+            <div className="user-info">
+                <h2 className="user-name">{user.name}</h2>
+                <p className="user-age">Age: {user.age}</p>
+                <p className="user-position">Position: {user.position}</p>
+                <div className="user-actions">
+                    <button
+                        className="user-delete-btn"
+                        onClick={() => eliminarUser(user.id)}
+                    >
+                        Delete
+                    </button>
+                    {/* Botão para Editar */}
+                    <Link to={`/edit/${user.id}`}>
+                        <button className="user-edit-btn">Edit</button>
+                    </Link>
                 </div>
-            </Link>
-            <div className='info'>
-                {user.age}
             </div>
-            <div className='info'>
-                {user.position}
-            </div>
-            <img src={user.image} />
+        </article>
+    );
+};
 
+User.propTypes = {
+    user: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        age: PropTypes.number.isRequired,
+        position: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+    }).isRequired,
+    eliminarUser: PropTypes.func.isRequired,
+};
 
-            <button onClick={handleClick}>
-                Eliminar
-            </button>
-        </div >
-
-    )
-}
-
-export default User
+export default User;

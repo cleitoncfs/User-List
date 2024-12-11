@@ -1,17 +1,69 @@
-/* add */
-.App .info {
-    background-color: #444;
-    border: 1px solid white;
+.user-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 20px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+    border: 2px solid #ccc;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.user-age,
+.user-position {
+    font-size: 1rem;
+    color: #666;
+    margin: 4px 0;
+}
+
+.user-delete-btn {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
     border-radius: 4px;
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.user {
-    margin: 20px;
+.user-delete-btn:hover {
+    background-color: #ff7875;
 }
 
-.user img{
-    width: 60px;
+.user-edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.user-edit-btn:hover {
+    background-color: #0056b3;
+}

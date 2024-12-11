@@ -1,0 +1,68 @@
+/* NewUserPage.css */
+
+.new-user-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-user-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.new-user-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.new-user-container label {
+    font-size: 14px;
+    color: #555;
+}
+
+.new-user-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.new-user-container input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-user-container input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.new-user-container .back-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.new-user-container .back-button button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-user-container .back-button button:hover {
+    background-color: #565e64;
+}

@@ -1,0 +1,68 @@
+/* EditUserPage.css */
+
+.edit-user-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-user-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.edit-user-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-user-container label {
+    font-size: 14px;
+    color: #555;
+}
+
+.edit-user-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.edit-user-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-user-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.edit-user-container .back-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.edit-user-container .back-button button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-user-container .back-button button:hover {
+    background-color: #565e64;
+}
