@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import "./EditUserPage.css";
 
-function EditUserPage(props) {
+function EditUserPage({ users, setUsers }) {
     const { userId } = useParams();
-    const { users, setUsers } = props;
 
     const userToEdit = users.find((user) => user.id == userId);
 
@@ -96,5 +96,17 @@ function EditUserPage(props) {
         </div>
     );
 }
+
+EditUserPage.propTypes = {
+    users: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            age: PropTypes.number.isRequired,
+            position: PropTypes.string.isRequired,
+        })
+    ).isRequired,
+    setUsers: PropTypes.func.isRequired,
+};
 
 export default EditUserPage;
