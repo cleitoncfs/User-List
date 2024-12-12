@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => ({
     plugins: [react()],
-    base: "/User-List/", // O mesmo valor da propriedade "homepage" no package.json
-});
+    base: mode === "production" ? "/User-List/" : "/", // Define a base apenas para produção
+}));
